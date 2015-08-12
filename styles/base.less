@@ -311,7 +311,8 @@ atom-text-editor .search-results .marker.current-result .region,
   &.class,
   &.namespace,
   &.function {
-    color: @default-entities;
+    color: @default-modifiers;
+    font-weight: bold;
   }
 
   &.function.construct {
@@ -400,12 +401,12 @@ atom-text-editor .search-results .marker.current-result .region,
   &.function-call,
   &.arguments,
   &.other {
-    color: @default-entities;
+    color: @default-modifiers;
   }
 
   &.method-call {
     .method {
-      color: @default-entities;
+      color: @default-modifiers;
     }
   }
 

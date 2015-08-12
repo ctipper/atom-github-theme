@@ -1,9 +1,44 @@
+// HTML, XML
+
+.html, .xml {
+  .entity.name {
+    &.tag {
+      font-weight: bold;
+    }
+  }
+  .entity.other {
+    &.attribute-name {
+      color: #777777;
+    }
+  }
+}
+
 // CSS, Less, Sass
 
 .css, .less, .scss {
-  .entity {
-    &.attribute-name {
-      font-weight: bold;
+   .entity.name {
+     &.tag {
+       color: #445588;
+       font-weight: bold;
+     }
+   }
+   .entity {
+     &.attribute-name {
+       color: #445588;
+       font-weight: bold;
+     }
+   }
+  .keyword {
+    &.control {
+      color: #445588;
+     }
+   }
+  .punctuation {
+      color: #445588;
+  }
+  .support {
+    &.property-name {
+    color: #6666FF;
     }
   }
 }
@@ -11,12 +46,25 @@
 // JavaScript
 
 .js {
-  &.source,
-  .storage.modifier {
-    color: @default-variables;
+  .storage {
+    &.modifier {
+      color: @default-modifiers;
+      font-weight: bold;
+    }
+    &.type.function {
+      font-weight: bold;
+    }
+    &.type.function {
+      color: @default-modifiers;
+      font-weight: bold;
+    }
   }
   .keyword.operator.new {
     color: @default-plain-text;
+    font-weight: bold;
+  }
+  .entity.name {
+    color: @default-modifiers;
     font-weight: bold;
   }
 }
@@ -47,7 +95,14 @@
   .storage {
     &.modifier {
       color: @default-modifiers;
-      font-weight: normal;
+      font-weight: bold;
+    }
+    &.type {
+      color: @default-modifiers;
+      font-weight: bold;
+    }
+    &.type.primitive {
+      font-weight: bold;
     }
   }
   .meta.class.identifier {
@@ -62,10 +117,8 @@
       font-weight: bold;
     }
   }
-  .storage.type {
-    color: @default-entities;
-  }
-  .storage.type.primitive {
+  .entity.name {
     color: @default-modifiers;
+    font-weight: bold;
   }
 }
