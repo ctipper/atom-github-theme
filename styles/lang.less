@@ -1,13 +1,13 @@
 // HTML, XML
 
-.html, .xml {
-  .entity.name {
-    &.tag {
+.syntax--html, .syntax--xml {
+  .syntax--entity.syntax--name {
+    &.syntax--tag {
       font-weight: bold;
     }
   }
-  .entity.other {
-    &.attribute-name {
+  .syntax--entity.syntax--other {
+    &.syntax--attribute-name {
       color: #777777;
     }
   }
@@ -15,29 +15,29 @@
 
 // CSS, Less, Sass
 
-.css, .less, .scss {
-   .entity.name {
-     &.tag {
+.syntax--css, .syntax--less, .syntax--scss {
+   .syntax--entity.syntax--name {
+     &.syntax--tag {
        color: #445588;
        font-weight: bold;
      }
    }
-   .entity {
-     &.attribute-name {
+   .syntax--entity {
+     &.syntax--attribute-name {
        color: #445588;
        font-weight: bold;
      }
    }
-  .keyword {
-    &.control {
+  .syntax--keyword {
+    &.syntax--control {
       color: #445588;
      }
    }
-  .punctuation {
+  .syntax--punctuation {
       color: #445588;
   }
-  .support {
-    &.property-name {
+  .syntax--support {
+    &.syntax--property-name {
     color: #6666FF;
     }
   }
@@ -45,25 +45,25 @@
 
 // JavaScript
 
-.js {
-  .storage {
-    &.modifier {
+.syntax--js {
+  .syntax--storage {
+    &.syntax--modifier {
       color: @default-modifiers;
       font-weight: bold;
     }
-    &.type.function {
+    &.syntax--type.syntax--function {
       font-weight: bold;
     }
-    &.type.function {
+    &.syntax--type.syntax--function {
       color: @default-modifiers;
       font-weight: bold;
     }
   }
-  .keyword.operator.new {
+  .syntax--keyword.syntax--operator.syntax--new {
     color: @default-plain-text;
     font-weight: bold;
   }
-  .entity.name {
+  .syntax--entity.syntax--name {
     color: @default-modifiers;
     font-weight: bold;
   }
@@ -71,19 +71,19 @@
 
 // PHP
 
-.php {
-  .constant.other {
+.syntax--php {
+  .syntax--constant.syntax--other {
     color: @default-numbers;
   }
-  .storage.type {
+  .syntax--storage.syntax--type {
     font-weight: bold;
   }
 }
 
 // YAML
 
-.yaml {
-  .entity.name {
+.syntax--yaml {
+  .syntax--entity.syntax--name {
     color: @default-plain-text;
     font-weight: bold;
   }
@@ -91,33 +91,33 @@
 
 // Java
 
-.java {
-  .storage {
-    &.modifier {
+.syntax--java {
+  .syntax--storage {
+    &.syntax--modifier {
       color: @default-modifiers;
       font-weight: bold;
     }
-    &.type {
+    &.syntax--type {
       color: @default-modifiers;
       font-weight: bold;
     }
-    &.type.primitive {
+    &.syntax--type.syntax--primitive {
       font-weight: bold;
     }
   }
-  .meta.class.identifier {
-    .storage.modifier {
+  .syntax--meta.syntax--class.syntax--identifier {
+    .syntax--storage.syntax--modifier {
       font-weight: bold;
     }
   }
-  .meta.class.inherited,
-  .meta.class.implemented {
-    .storage.modifier {
+  .syntax--meta.syntax--class.syntax--inherited,
+  .syntax--meta.syntax--class.syntax--implemented {
+    .syntax--storage.syntax--modifier {
       color: @default-plain-text;
       font-weight: bold;
     }
   }
-  .entity.name {
+  .syntax--entity.syntax--name {
     color: @default-modifiers;
     font-weight: bold;
   }
